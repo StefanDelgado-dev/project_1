@@ -1,0 +1,49 @@
+/* Basic styles for Properties page - placed in css/styles.css */
+:root{
+  --accent:#eeddde; /* beige */
+  --green:#5b8c56;
+  --text:#3b3b3b;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, Helvetica, sans-serif;color:var(--text);background:var(--green)}
+.site-header{background:var(--accent);box-shadow:0 2px 0 rgba(0,0,0,.06)}
+.nav{max-width:1200px;margin:0 auto;padding:20px 12px;display:flex;justify-content:space-between}
+.nav-link{color:#333;text-decoration:none;font-weight:700;letter-spacing:.6px}
+.nav-link.active{text-decoration:underline}
+
+.page-wrap{max-width:1200px;margin:0 auto;display:flex;gap:30px;padding:30px}
+.sidebar{width:220px;padding:10px;color:#fff}
+.sidebar .category img{width:100%;display:block;border-radius:6px;box-shadow:4px 6px 18px rgba(0,0,0,.35)}
+.cat-label{text-align:center;margin-top:14px;font-style:italic;font-weight:700}
+.categories{list-style:none;padding:18px 0;margin:0;color:#fff}
+.cat-item{padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.logo{position:sticky;bottom:20px;margin-top:40px}
+.logo img{width:140px;opacity:.95}
+
+.content{flex:1}
+.gallery{display:flex;gap:18px;align-items:flex-start}
+.featured{flex:2}
+.featured img{width:100%;height:380px;object-fit:cover;border-radius:4px;box-shadow:6px 8px 24px rgba(0,0,0,.35)}
+.thumbs{flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.thumbs img{width:100%;height:180px;object-fit:cover;border-radius:4px;cursor:pointer;box-shadow:4px 6px 18px rgba(0,0,0,.25)}
+
+.property-meta{margin-top:18px}
+.address{background:var(--accent);padding:18px;border-radius:4px;text-align:center;font-weight:600}
+.details{background:var(--accent);padding:24px;margin-top:18px;border-radius:4px;min-height:120px}
+
+.inquire-btn{position:fixed;right:36px;bottom:24px;background:var(--accent);color:var(--text);padding:14px 24px;border-radius:30px;border:4px solid rgba(255,255,255,.14);text-decoration:none;font-weight:700}
+
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.8);display:none;align-items:center;justify-content:center;z-index:999}
+.lightbox img{max-width:90%;max-height:85%;border-radius:6px}
+.lb-close{position:absolute;top:18px;right:22px;background:transparent;color:#fff;border:0;font-size:36px;cursor:pointer}
+
+/* Responsive */
+@media (max-width:900px){
+  .page-wrap{flex-direction:column;padding:18px}
+  .sidebar{width:100%;order:2;display:flex;justify-content:space-between;align-items:center}
+  .gallery{flex-direction:column}
+  .featured img{height:260px}
+  .thumbs{grid-template-columns:repeat(3,1fr)}
+  .inquire-btn{right:18px}
+}

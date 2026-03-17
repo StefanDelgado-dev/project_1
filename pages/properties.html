@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>MKEL3 Properties — Properties</title>
+	<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="nav">
+			<a class="nav-link" href="home.html">HOME</a>
+			<a class="nav-link active" href="properties.html">PROPERTIES</a>
+			<a class="nav-link" href="inquiries.html">INQUIRIES</a>
+			<a class="nav-link" href="appointment.html">BOOK AN APPOINTMENT</a>
+			<a class="nav-link" href="about.html">ABOUT ME</a>
+		</nav>
+	</header>
+
+	<div class="page-wrap">
+		<aside class="sidebar">
+			<div class="category">
+				<img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=60" alt="Condominiums" />
+				<div class="cat-label">CONDOMINIUMS</div>
+			</div>
+
+			<ul class="categories">
+				<li class="cat-item">Condominiums</li>
+				<li class="cat-item">Houses</li>
+				<li class="cat-item">Vacant Lots</li>
+			</ul>
+
+			<div class="logo">
+				<img src="https://i.imgur.com/0KXQbQq.png" alt="Agent logo" />
+			</div>
+		</aside>
+
+		<main class="content">
+			<section class="gallery">
+				<div class="featured">
+					<img id="featuredImg" src="https://images.unsplash.com/photo-1560184897-6c3d8fc9f4b0?w=1200&q=60" alt="Featured property" />
+				</div>
+
+				<div class="thumbs">
+					<img class="thumb" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=60" alt="thumb1" data-full="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=60">
+					<img class="thumb" src="https://images.unsplash.com/photo-1505691723518-36a1b5f4f9c3?w=800&q=60" alt="thumb2" data-full="https://images.unsplash.com/photo-1505691723518-36a1b5f4f9c3?w=1600&q=60">
+					<img class="thumb" src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=60" alt="thumb3" data-full="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1600&q=60">
+					<img class="thumb" src="https://images.unsplash.com/photo-1572120360610-d971b9b2c6d7?w=800&q=60" alt="thumb4" data-full="https://images.unsplash.com/photo-1572120360610-d971b9b2c6d7?w=1600&q=60">
+				</div>
+			</section>
+
+			<section class="property-meta">
+				<div class="address">Property Address</div>
+				<div class="details">Property Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in arcu vitae justo fermentum placerat. Add real content here.</div>
+			</section>
+
+			<a class="inquire-btn" href="inquiries.html?property=Property%20Address">Inquire →</a>
+		</main>
+	</div>
+
+	<!-- Lightbox overlay -->
+	<div id="lightbox" class="lightbox" aria-hidden="true">
+		<button id="lbClose" class="lb-close" aria-label="Close">×</button>
+		<img id="lbImg" src="" alt="">
+	</div>
+
+	<script src="../js/properties.js"></script>
+</body>
+</html>
+
